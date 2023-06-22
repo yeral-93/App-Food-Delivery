@@ -14,6 +14,7 @@ import PlateSearch from "../pages/PlateSearch";
 import OrderDetail from "../pages/OrderDetail";
 import SplashScreen from "../pages/splashScreen/SplashScreen";
 import { MobileView } from "../styles/GlobalStyle";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AppRouter = () => {
   return (
