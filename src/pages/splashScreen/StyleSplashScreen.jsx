@@ -6,11 +6,12 @@ background-color: #FFE031;
 display: flex;
 justify-content: center;
 align-items: center;
+width: 100%;
 figure{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 375px;
+    
 
     img{
     width: 121px;

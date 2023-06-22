@@ -5,6 +5,7 @@ export const MobileView = styled.div`
   display: flex;
   justify-content: center;
   height: 100vh;
+  width: 100%;
   margin: 0%;
   font-family: "Roboto", sans-serif;
 `;
