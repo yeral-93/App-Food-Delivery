@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Slide from "../pages/Slide";
 import Login from "../pages/login/Login";
-import Home from "../pages/Home";
-import DetailsRestaurant from "../pages/DetailsRestaurant";
-import DetailsProduct from "../pages/DetailsProduct";
+import Home from "../pages/home/Home";
+import DetailsRestaurant from "../pages/detailRestaurant/DetailsRestaurant";
+import DetailsProduct from "../pages/detailsProducts/DetailsProduct";
 import Order from "../pages/Order";
 import PaymentOrder from "../pages/PaymentOrder";
 import ConfirmationOrder from "../pages/ConfirmationOrder";
@@ -71,8 +71,8 @@ const AppRouter = () => {
             <Route path="user" element={<User />} />
             <Route path="home" element={<Home />} />
             <Route path="platesearch" element={<PlateSearch />} />
-            <Route path="detailsrestaurant" element={<DetailsRestaurant />} />
-            <Route path="detailsproduct" element={<DetailsProduct />} />
+            <Route path="/detailsrestaurant/:restaurantId" element={<DetailsRestaurant />} />
+            <Route path="detailsproduct/:id" element={<DetailsProduct />} />
             <Route path="order" element={<Order />} />
             <Route path="orderdetail" element={<OrderDetail />} />
             <Route path="paymentorder" element={<PaymentOrder />} />
