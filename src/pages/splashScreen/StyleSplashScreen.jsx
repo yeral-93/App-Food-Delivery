@@ -6,7 +6,8 @@ background-color: #FFE031;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 400px;
+height:100vh ;
 figure{
     display: flex;
     align-items: center;

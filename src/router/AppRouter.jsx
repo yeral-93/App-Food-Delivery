@@ -63,9 +63,9 @@ const AppRouter = () => {
       <BrowserRouter>
         <Routes>
           <Route element={<PublicRouter isAutentication={isLoggedIn} />}>
-            <Route path="splashscreen" element={<SplashScreen />} />
+            <Route index element={<SplashScreen />} />
             <Route path="slide" element={<Slide />} />
-            <Route index element={<Login />} />
+            <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
           </Route>
           <Route element={<PrivateRouter isAutentication={isLoggedIn} />}>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { ContainerDetailRest, ContainerFoods, InfoRestaurant, InfoRestaurant1, StarAndTime } from "./StyleDetailsRest";
+import { Botones, Button1, ContainerDetailRest, ContainerFoods, DivBotones, InfoRestaurant, InfoRestaurant1, StarAndTime } from "./StyleDetailsRest";
 
 const DetailsRestaurant = () => {
   const navigate = useNavigate();
@@ -32,9 +32,9 @@ const DetailsRestaurant = () => {
           </figure>
         </div>
         <InfoRestaurant1>
-          <div>
+          <figure>
             <img src={restaurantImage} alt={restaurantName} />
-          </div>
+          </figure>
           <div>
             <h1>{restaurantName}</h1>
             <p>{restaurantDescription}</p>
@@ -45,20 +45,26 @@ const DetailsRestaurant = () => {
           </div>
         </InfoRestaurant1>
       </InfoRestaurant>
-      <div>
-        <button>All</button>
+      <DivBotones>
+        <Button1>All</Button1>
         <button>Salates</button>
         <button>Pizza</button>
-      </div>
+      </DivBotones>
+<ContainerFoods >
       {Foods.map((food) => (
-        <ContainerFoods key={food.id} onClick={() => navigateToProductDetails(food)}>
-          <figure>
-            <img src={food.image} alt={food.name} />
-          </figure>
-          <h3>{food.name}</h3>
-          <h4>{food.price}</h4>
-        </ContainerFoods>
+        <div key={food.id} onClick={() => navigateToProductDetails(food)}>
+  
+            <figure>
+              <img src={food.image} alt={food.name} />
+            </figure>
+            <h3>{food.name}</h3>
+            <h4>{food.price}</h4>
+          
+        </div>
       ))}
+      </ContainerFoods >
+      
+
     </ContainerDetailRest>
   );
 };

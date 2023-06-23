@@ -8,6 +8,7 @@ export const ContainerLocation = styled.div`
 display: flex;
 align-items: center;
 gap: 9px;
+margin:10px ;
 h5{
     color: #FFE031;
     font-style: Regular;
@@ -25,12 +26,13 @@ display: flex;
 width: 360px;
 
 
+
 figure{
     display: flex;
     gap: 10px;
     margin-left: 0px;
     width: 248px;
-    height: 88px;
+    height: 75px;
 
 
     img{
@@ -51,6 +53,7 @@ color: #414141;
 export const ButtonCategory = styled.div`
 display: flex;
 gap: 10px;
+margin-bottom:15px ;
 
 button{
     width: 106px;
@@ -70,25 +73,27 @@ button{
 
 export const DivRestaurants = styled.div`
 display: flex;
+gap:40px ;
 `
 
 export const DivRestaurantsinf = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: left;
-margin-left: -28px;
+
+
 
 
 h2{
     font-size: 16px;
     color: #414141;
-   margin-bottom: -15px;
-   margin-top: 25px;
+   margin-bottom: -5px;
+   margin-top: 20px;
 }
 img{
     width: 68px;
     height: 12px;
-    margin-left: -38px;
+   
     
 }
 
@@ -96,8 +101,8 @@ h3{
     color: #414141;
     font-weight: 300;
     font-size: 14px;
-    margin-bottom: -8px;
-    margin-top: -11px;
+    margin-bottom: 1px;
+    margin-top: -15px;
 }
 
 h4{
@@ -107,7 +112,15 @@ h4{
 }
 `
 export const DivImgRestaurant = styled.div`
+
 figure{
     margin-left: 5px;
+    width: 90px;
+    height: 90px;
+    
+}
+img{
+    width:100% ;
+    height:100% ;
 }
 `

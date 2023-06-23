@@ -17,6 +17,7 @@ import {
   ImgsCarrusel,
 } from "./StyleHome";
 import { useNavigate } from "react-router-dom";
+import Footer from "../footer/Footer";
 
 const Home = ({ restaurantData, fetchRestaurantData }) => {
   useEffect(() => {
@@ -114,6 +115,7 @@ const Home = ({ restaurantData, fetchRestaurantData }) => {
           </DivRestaurantsinf>
         </DivRestaurants>
       ))}
+       <Footer/>
     </ContainerHome>
   );
 };
