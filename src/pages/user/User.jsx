@@ -64,7 +64,8 @@ const User = () => {
         iconSrc={faq}
         iconsSrc={next}
         placeholder={"FAQ"}
-      /> <InputText
+      /> 
+      <InputText
       type="text"
       iconSrc={telepone}
       iconsSrc={next}

@@ -5,6 +5,7 @@ import styled, {css} from 'styled-components';
 import mujer1 from '../../asset/Svg.png'
 import hombre1 from '../../asset/Svg (1).png'
 import mujer2 from '../../asset/Svg (2).png'
+import { useNavigate } from 'react-router-dom';
 
 const CarouselWrapper = styled.div`
   max-width: 500px;
@@ -71,6 +72,10 @@ const Slides = () => {
   const handleSelect = (selectedIndex) => {
     setActiveIndex(selectedIndex);
   };
+  const navegar = useNavigate()
+  const onClikNext = () => {
+      navegar('/login')
+    }
 
   return (
     <>
@@ -103,7 +108,7 @@ a variety of restaurants from the list</Legend>
         </Slide>
         </StyledCarousel>
     </CarouselWrapper>
-     <ButtonSlide>Save</ButtonSlide>
+     <ButtonSlide onClick={onClikNext}>Next</ButtonSlide>
      </>
   );
 }
