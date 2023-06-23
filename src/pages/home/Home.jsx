@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchRestaurantData } from "../../redux/actions/restaurantAction";
-import ubication from "../../asset/location.png";
+import ubication from "../../asset/locationHome.png";
 import img1 from "../../asset/Promo 1.png";
 import img2 from "../../asset/Promo 2 (1).png";
 import hamburger from "../../asset/hamburger.png";
